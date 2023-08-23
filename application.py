@@ -4,14 +4,14 @@ from helpers.openai_helper import gpt3_completion
 from helpers.pdf_helper import read_pdf
 from helpers.text_helper import split_text
 
-app = Flask(__name__)
+application = Flask(__name__)
 load_dotenv()
 
-@app.route('/', methods=['GET'])
+@application.route('/', methods=['GET'])
 def index():
   return render_template('index.html')
 
-@app.route('/summarize', methods=['POST'])
+@application.route('/summarize', methods=['POST'])
 def summarize():
   if 'file' not in request.files:
     return jsonify({'error': 'No file part'})
@@ -40,4 +40,4 @@ def summarize():
   return jsonify({'summary': summarized_text})
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  application.run(debug=True)
