@@ -2,6 +2,14 @@
 
 This project implements a PDF summarization tool using Python, Flask, and the OpenAI API. The tool extracts content from uploaded PDF files, sends it to the OpenAI API for text summarization, and displays the summarized text to the user. The frontend provides an easy-to-use interface for users to interact with the tool.
 
+## Demo
+
+You can try out the PDF Summarization Tool by visiting the demo link:
+
+**Demo Link:** [PDF Summarization Tool Demo](http://pdf-summarization-tool.us-east-2.elasticbeanstalk.com/)
+
+Please note that this demo link may not be available indefinitely and is provided for testing purposes.
+
 ## Prerequisites
 
 1. **Python:** Make sure you have Python 3.x installed on your system.
